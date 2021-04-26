@@ -1,0 +1,10 @@
+<h1>Hello from index.html.erb</h1>
+
+<p>
+  <% @flats.each do |flat| %>
+    <div>
+      <img src="<%= flat["imageUrl"] %>" alt="image appartement" width="200">
+      <p><%= flat["name"] %> (<%= flat["price"] %> <%= flat["priceCurrency"] %>)</p>
+    </div>
+  <% end %>
+</p>
