@@ -4,5 +4,8 @@ Rails.application.routes.draw do
   # get '/', to: 'flats#index', as: :root
   root to: 'flats#index'
 
+  get '/flats/:id', to: 'flats#show', as: :flat
+
+  # 'https://www.airbnb.fr/rooms/25247659'
   # verb "url", to: "controller#action"
 end

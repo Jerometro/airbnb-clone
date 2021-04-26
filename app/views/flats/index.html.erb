@@ -5,6 +5,7 @@
     <div>
       <img src="<%= flat["imageUrl"] %>" alt="image appartement" width="200">
       <p><%= flat["name"] %> (<%= flat["price"] %> <%= flat["priceCurrency"] %>)</p>
+      <%= link_to "Voir les détails", flat_path(flat['id']) %>
     </div>
   <% end %>
 </p>
